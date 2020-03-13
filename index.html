@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <title>Mi portafolio</title>
+
+</head>
+
+<body>
+  <section class="bienvenidos">
+    <div class="container">
+      <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <!-- fixed-top es para que el texto del bienvenos no se mueva junto con la barra de navegación, sino que se quede estático-->
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#!">CAROLINA GARCÍA</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!---ESTA CLASE LE DA LA PROPIEDAD-->
+            <!--menuprincipal-->
+
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#!">Inicio</a>
+                <!--Colocamos este enlace para que cuando colapse, se vea organizado-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca-de-mi">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+      <div class="texto-bienvenido text-center px-3 py-3">
+        <p class="h5 mt-5 mb-4">¡Bienvenidos a mi portafolio!</p>
+        <!--la clase h2 es para el tamaño-->
+        <img src="images/foto_perfil.jpg" alt="Mi foto de perfil" width="140" class="profile-photo img-fluid mx-auto">
+        <h1 class="display-5 mb-2">CAROLINA GARCÍA CABALLERO</h1>
+        <h5>Desarrolladora Web FrontEnd</h5>
+        
+
+        <div>
+          <div class="icons-contact text-center">
+            <a href="https://www.linkedin.com/in/caritogarcia/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/caritog">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="carito940905@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+         <!--LUEGO LO ACTIVO -->
+       <!-- <a href="#" class="btn btn-primary btn-lg my-3">Ponte en contacto</a> -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--ACERCA DE MI-->
+
+  <section class="quien-soy py-2 px-2 text-center">
+    <div class="container">
+      <h3 id="acerca-de-mi" class="mt-2 mb-4">ACERCA DE MI</h3>
+      <p>Soy tecnóloga en Desarrollo en Software egresada del Pascual Bravo y actualmente
+        me estoy formando en Desarrollo Web FrontEnd en Academia Geek y así encaminarme hacia el campo laboral. 
+        En mis tiempos libres disfruto de compartir  mis seres queridos, escuchar música, pintar cerámica, buscar 
+        experiencias de viaje y jugar League of Legends.  
+      </p>
+       <!--LUEGO LO ACTIVO -->
+      <!-- <a href="#" class="btn btn-secondary btn-lg">Más información</a> -->
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+
+  <section id="habilidades" class="habilidades px-2 text-center">
+    <div class="container">
+      <h2 class="mt-4 h3 mb-4">HABILIDADES</h2>
+
+      <div class="row mb-2">
+        <div class="col-md-4">
+          <h6 class="mt-4 mb-4">Lenguajes de programación y maquetación</h6>
+          <i class="devicon-java-plain colored devicon"></i>
+          <i class="devicon-html5-plain colored devicon"></i>
+          <i class="devicon-css3-plain colored devicon"></i>
+          <i class="devicon-javascript-plain colored devicon"></i>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="mt-4 mb-4">Gestores de Bases de Datos y Servidores</h6>
+          <i class="devicon-apache-plain colored devicon"></i>
+          <i class="devicon-mysql-plain colored devicon"></i>
+          <i class="devicon-tomcat-line colored devicon"></i>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="mt-4 mb-4">Frameworks</h6>
+          <i class="devicon-bootstrap-plain colored devicon"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROYECYOS -->
+
+  <section id="proyectos" class="proyectos py-3 text-center">
+    <div class="container">
+      <h2 class="mt-2 h3 mb-5">MIS PROYECTOS</h2>
+
+      <div class="row">
+
+        <div class="texto-imagen col-md-4">
+          <!--<div> Trubute Page  </div> -->
+          <a href="https://caritog.github.io/Tribute-page/">
+            <img src="images/Tribute-page.png" alt="Mi página tributo" width="290" class="img-fluid ">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://caritog.github.io/SurveyPage/">
+            <img src="images/SurveyPage.png" alt="Mi formulario" width="290" class="img-fluid ">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://caritog.github.io/LandingPage/">
+            <img src="images/landing-page.png" alt="Mi página de negocio" width="290" class="img-fluid ">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://caritog.github.io/TechnicalDocumentationPage/">
+            <img src="images/TechnicalDocumentationPage.png" alt="Mi página de documentación técnica" width="290"
+              class="img-fluid ">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://dubis78.github.io/Reto-1/formulario.html">
+            <img src="images/reto1grupal.png" alt="Primer reto grupal" width="290" class="img-fluid ">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://caritog.github.io/Clon-Wikipedia/">
+            <img src="images/wiki-clon.png" alt="Clon de Wikipedia" width="290" class="img-fluid ">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACTO-->
+
+  <section id="contacto" class="contactame py-2 px-2 text-center">
+    <div class="container">
+      <h3 class="mt-2 mb-4">CONTÁCTAME</h3>
+      <p>
+        Vamos a trabajar juntos...
+        ¿Cómo se toma su café?</p>
+      <span>carito940905@gmail.com</span>
+      <br>
+      <strong>+57 317 888 3382</strong>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer py-2 text-center">
+    <div class="container">
+      <div>
+        <div class="icons-footer text-center">
+          <a href="https://www.linkedin.com/in/caritogarcia/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/caritog">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="carito940905@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  </div>
+</body>
+
+</html>

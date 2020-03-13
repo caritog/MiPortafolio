@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Comfortaa', cursive !important;
+}
+
+.bienvenidos {
+    background: url(../images/fondo1.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden; /* esto es porque cuando le dimos el margin top al texto-bienvenido, el fondo se mueve, entonces con esta propiedad, ya se queda estático el fondo */
+}
+
+.fixed-top { /*se cambió el nombre de encabezado por fixed top para que quede el fondo en la barra de navegación  */
+    background: rgba(0, 0, 0, 0.60);
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9)!important;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.98) ;
+}
+
+.navbar-toggler-icon  {
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+/* .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.98);
+} */
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(252, 146, 58, 0.98) !important;
+} /*es para personalizar los diferentes elementos que Bootstrap trae por defecto */
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link { /*Esta es nuestra nax Inicio */
+    color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(252, 146, 58, 0.98);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+   /* margin: .2rem 0; */  /*para colocar un margen entre "Inicio" y "Nosotros" */
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgb(255, 141, 64); /*es para darle un fondo a los links de navegacion cuando se pase el cursor */
+}
+
+/* /////////////////  BIENVENIDOS A MI PORTAFOLIO /////////////////// */
+
+.texto-bienvenido {
+    color: #ffffff;
+    margin-top: 8rem;
+    background-color: rgba(58, 55, 52, 0.753);
+}
+
+.profile-photo {
+     border-radius: 50%;
+     position: relative;
+ } 
+
+.icons-contact .fab {
+    color: rgba(252, 146, 58, 0.98);
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.icons-contact .fas {
+    color: rgba(252, 146, 58, 0.98);
+    font-size: 2rem;
+    margin: 10px;
+}
+/* LUEGO LO ACTIVO */
+/* .btn-primary {
+    background-color: #ff9700 !important;
+    border-color: #cd5410 !important;
+    transition: all 5s ease;
+    text-transform: uppercase; 
+} 
+
+.btn-primary:hover {
+    background-color: #ecba6f ;
+    border-color: #ff9700 ;
+} */ 
+
+/* ////////////////////////////// ACERCA DE MI //////////////////////////// */
+
+.quien-soy {
+    background-color:rgba(252, 146, 58, 0.98);
+    color: white ;
+}
+
+/* LUEGO LO ACTIVO */
+
+/* .btn-secondary {
+    transition: all 5s ease;
+    text-transform: uppercase; 
+} */
+
+
+
+
+/* ////////////////////////////// HABILIDADES ////////////////////////////////////*/
+
+.habilidades .h2 {
+    font-weight: bold;
+}
+
+.habilidades .h6 {
+    font-weight: bold;
+}
+
+.habilidades .devicon {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+/* /////////////////////ESTILOS DE LOS PROYECTOS /////////////////////// */
+
+.proyectos {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: #ffffff;
+}
+
+/* .proyectos img {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+} */
+
+.proyectos img {
+    margin-bottom: 1.5rem;
+    transition: all 3 ease; /*forma suavizada para la transición */
+    min-width: 100%; /*para que no se desborde la imagen */
+}
+
+.proyectos a:hover img{
+    transform: scale(1.5);
+}
+
+/* .texto-imagen > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px;
+    margin: 0;
+}
+
+.imagen1:hover {
+    opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+} */ 
+
+/* ////////////////////////////L FOOTER ///////////////////// */
+
+.footer {
+    color: #ffffff;
+    background-color: black;
+}
+
+.icons-footer .fab {
+    color: rgba(252, 146, 58, 0.98);
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.icons-footer .fas {
+    color: rgba(252, 146, 58, 0.98);
+    font-size: 2rem;
+    margin: 10px;
+}
